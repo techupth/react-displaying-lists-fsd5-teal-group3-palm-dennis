@@ -49,9 +49,10 @@ const MovieLists = ({ movies }) => {
           <p>Runtime: {movies.runtime}</p>
           <p>
             Genres:{" "}
-            {movies.genres.map((item) => {
+            {movies.genres.map((item, i) => {
               return (
                 <span
+                  key={i}
                   css={css`
                     color: #000;
                     font-family: Kanit;
