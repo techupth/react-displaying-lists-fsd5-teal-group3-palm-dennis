@@ -1,5 +1,5 @@
 import React from "react";
-
+import { v4 as uuidv4 } from "uuid";
 function Moviesection({
   title,
   year,
@@ -22,14 +22,17 @@ function Moviesection({
         <p>Title: {title}</p>
         <p>Year: {year}</p>
         <p>Runtime: {runtime}</p>
-        <p className="flex flex-wrap items-center">
+        <div className="flex flex-wrap items-center">
           Genres:
-          {genres.map((item) => (
-            <p className="m-1 p-1 px-3 bg-red-400 rounded-xl hover:scale-105">
+          {genres.map((item, i) => (
+            <p
+              className="m-1 p-1 px-3 bg-red-400 rounded-xl hover:scale-105"
+              key={uuidv4()}
+            >
               {item}
             </p>
           ))}
-        </p>
+        </div>
         <p>IMDB Ratings: {imdbRating}</p>
         <p>IMDB Votes: {imdbVotes}</p>
       </div>
