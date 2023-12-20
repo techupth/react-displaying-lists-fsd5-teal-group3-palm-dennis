@@ -37,7 +37,7 @@ const MovieLists = ({ movies }) => {
         </div>
         <div
           css={css`
-            width: 300px;
+            width: 350px;
             font-size: 20px;
             font-style: normal;
             font-weight: 400;
@@ -61,7 +61,7 @@ const MovieLists = ({ movies }) => {
                     line-height: 18px;
                     border-radius: 10px;
                     background: #eaac99;
-                    padding: 4px 6px;
+                    padding: 5px 10px;
                     margin-right: 5px;
                   `}
                 >
