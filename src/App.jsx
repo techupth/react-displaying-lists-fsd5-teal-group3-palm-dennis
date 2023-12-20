@@ -6,6 +6,9 @@ function App() {
     <>
       <div className="App">
         <section className="movie-list-section">
+          <h1 className="text-3xl text-center p-5 font-bold">
+            movie-list-section
+          </h1>
           {moviesdata.map((movie) => {
             return (
               <MovieCardSection
